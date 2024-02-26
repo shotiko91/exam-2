@@ -51,7 +51,7 @@ function calculator(){
                 //თუ შეყვანილი რიცხვი 0-ის ტოლია ან მეტია მაშინ დაიწყოს გამოთვლა
                 if(secondNumber){
                     // რიცხვის 0-ზე გაყოფის შემთხვევაში დაგვიწეროს შემდეგი ტექსტი და დაგვაბრუნოს უკან
-                    if (operation === '/' && secondNumber === 0) {
+                    if (operation === '/' && +secondNumber === 0) {
                         alert('რიცხვის 0-ზე გაყოფა არ შეიძლება');
                         continue;
                     } else {
